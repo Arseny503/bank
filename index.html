@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПАНК-БАНК</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #6a0dad; /* Фиолетовый цвет */
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #6a0dad; /* Фиолетовый цвет */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a0a9a; /* Темнее фиолетовый при наведении */
+        }
+        img {
+            max-width: 100%; /* Адаптивный размер изображения */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ПАНК-БАНК</h1>
+    <p>Ваш надежный финансовый партнер</p>
+    <img src="https://img.icons8.com/?size=100&id=2748&format=png&color=7950F2" alt="Логотип ПАНК-БАНК">
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#services">Услуги</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<section id="home">
+    <h2>Добро пожаловать!</h2>
+    <p>Мы предлагаем широкий спектр банковских услуг для физических и юридических лиц.</p>
+    <button onclick="requestConsultation()">Запросить консультацию</button>
+    <button onclick="window.location.href='personal_cabinet.html'" style="margin-left: 10px;">Перейти в личный кабинет</button>
+    <button onclick="window.location.href='products.html'" style="margin-left: 10px;">Наши продукты</button>
+
+</section>
+
+<section id="services">
+    <h2>Наши услуги</h2>
+    <ul>
+        <li>Открытие счетов</li>
+        <li>Кредиты и займы</li>
+        <li>Инвестиционные услуги</li>
+        <li>Картовые продукты</li>
+        <li>Онлайн-банкинг</li>
+    </ul>
+</section>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p>ПАНК-БАНК работает на рынке более 20 лет и зарекомендовал себя как надежный финансовый партнер.</p>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 (123) 456-78-90</p>
+    <p>Email: info@punkbank.ru</p>
+    <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+</section>
+
+<script>
+    function requestConsultation() {
+        alert("Спасибо за ваш запрос! Мы свяжемся с вами в ближайшее время.");
+    }
+</script>
+
+</body>
+</html>
